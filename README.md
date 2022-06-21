@@ -12,13 +12,7 @@ Requirements
 
 We support:
 
-* macOS Mavericks (10.9)
-* macOS Yosemite (10.10)
-* macOS El Capitan (10.11)
-* macOS Sierra (10.12)
-* macOS High Sierra (10.13)
-* macOS Mojave (10.14)
-* macOS Catalina (10.15)
+* macOS Monterey (12.3) on Apple Silicon and Intel
 
 Older versions may work but aren't regularly tested.
 Bug reports for older versions are welcome.
@@ -29,7 +23,7 @@ Install
 Download the script:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/main/mac
 ```
 
 Review the script (avoid running scripts you haven't read!):
@@ -202,6 +196,17 @@ brew install shellcheck
 [ShellCheck]: http://www.shellcheck.net/about.html
 [Syntastic]: https://github.com/scrooloose/syntastic
 
+### Testing your changes
+
+Test your changes by running the script on a fresh install of macOS.
+You can use the free and open source emulator [UTM].
+
+Tip: Make a fresh virtual machine with the installation of macOS completed and
+your user created and first launch complete. Then duplicate that machine to test
+the script each time on a fresh install thats ready to go.
+
+[UTM]: https://mac.getutm.app
+
 Thank you, [contributors]!
 
 [contributors]: https://github.com/thoughtbot/laptop/graphs/contributors
@@ -214,7 +219,7 @@ you agree to abide by the thoughtbot [code of conduct].
 License
 -------
 
-Laptop is © 2011-2020 thoughtbot, inc.
+Laptop is © 2011-2022 thoughtbot, inc.
 It is free software,
 and may be redistributed under the terms specified in the [LICENSE] file.
 
